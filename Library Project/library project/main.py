@@ -24,8 +24,6 @@ while True:
     if select ==1:
         print("-----------Membership Menu----------")
         select_member = menu("Member")
-        print("--------------Member menu-------")
-        print("1. Add Member")
 
         while True:
             if select_member ==1:
@@ -60,9 +58,7 @@ while True:
                     members_print(members)
 
                 elif menu_delete("Member") == 4:
-                    print("Exit")
-                    main_menu()
-                    members_print(members)
+                    print("Exit")                    
                     break
 
                 else:
@@ -71,8 +67,6 @@ while True:
 
             elif select_member == 3:
                 print("Update member")
-                print("---------------------------------------")
-                print(" *****NOT READY----------")
                 menu_update("Member")
                 members_print(members)
                 break
@@ -84,10 +78,8 @@ while True:
 
             elif select_member == 5:
                 print("Exit")
-                members_print(members)
                 break
-            else:
-                break
+            break
 
     elif select ==2:
         print("--------------Bookshelf menu-------")
