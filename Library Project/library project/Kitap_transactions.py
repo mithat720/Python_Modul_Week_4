@@ -17,13 +17,11 @@ def book_add():
     print("------------Book added----------")
     books_print(books)
 
-
 def books_print(books):
     print("Books in the library:")
     print("Barkod, Dil, Fiyat, Kitap_Adi, Yayinevi, Yazar")
     for i in books:
         print(f"Barkod: {i['Barkod']}, Dil: {i['Dil']}, Fiyat: {i['Fiyat']}, Kitap_Adi: {i['Kitap_Adi']}, Yayinevi: {i['Yayinevi']}, Yazar: {i['Yazar']}")  
-
 
 def book_update():
     print("Update a book")

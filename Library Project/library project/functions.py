@@ -21,7 +21,6 @@ def main_menu():
     print("| --------------------------------- |")
     return int(input(" Chooice a menu: "))
     
-
 def menu(x):
     print("-------------------------------------")
     print(f"| 1. {x} Add                     |")
@@ -31,8 +30,7 @@ def menu(x):
     print(f"| 5.     Exit                    |")   
     print("--------------------------------------")
     return int(input("Choice: "))
-    
-
+   
 def menu_add(x):
     print(f"{x} add menu")
     print("---------------------------------------")
@@ -42,7 +40,6 @@ def menu_add(x):
     time = int(input(f"{x} time:   "))
     print("---------------------------------------")
     return id, name, tel, time
-
     
 def menu_delete(x):
     print(f"{x} delete menu")
@@ -73,7 +70,6 @@ def menu_update(x):
     print(f"| 4. Exit:                           |")
     print("---------------------------------------")
     return int(input("| Choise:             --"))
-
 
 def menu_list(x):
     print(f"{x} list menu")
