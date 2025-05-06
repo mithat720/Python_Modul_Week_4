@@ -1,12 +1,11 @@
 # For example, adding a book, deleting a book,
 #  adding a member, giving a book to a member, 
 # and member control will be done here
-#  and the main function will be in the main.py file.
-
+#  and the main function will be in the main.py file
 # Libraary Project
-# 1. Book class
-# 2. Member class
-# 3. Library class
+# 1. Book class,
+# 2. Member class,
+# 3. Library class,
 # 4. Book class will have a title, author, and ISBN number
 # 5. Member class will have a name, member ID, and a list of borrowed books
 # 6. Library class will have a list of books and a list of members
@@ -17,7 +16,8 @@ def main_menu():
     print("--------------Main Menu -------------")
     print("| 1. Membership                     |")
     print("| 2. Bookshelf                      |")
-    print("| 3. Exit                           |")
+    print("| 3. Books actions                  |")
+    print("| 4. Exit                           |")
     print("| --------------------------------- |")
     return int(input(" Chooice a menu: "))
     
