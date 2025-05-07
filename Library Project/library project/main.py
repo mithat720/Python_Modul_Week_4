@@ -13,6 +13,8 @@ from Member_Transactions import members_print
 from Kitap_transactions import books_print
 from Kitap_transactions import book_delete_id
 from Kitap_transactions import book_delete_name
+from book_actions import book_actions_menu
+
 
 
 print("---------------------------------------")
@@ -111,5 +113,36 @@ while True:
 
 
     elif select ==3:
+        print("-----------Book actions menu--------")
+        while True:
+            select_book_actions = book_actions_menu()
+
+            if select_book_actions == 1:
+                print("Borrow Book")
+                # Add your borrow book logic here
+                
+            elif select_book_actions == 2:
+                print("Return Book")
+                # Add your return book logic here
+                
+            elif select_book_actions == 3:
+                print("Reserve Book")
+                # Add your reserve book logic here
+                
+            elif select_book_actions == 4:
+                print("Cancel Reservation")
+                # Add your cancel reservation logic here
+                
+            elif select_book_actions == 5:
+                print("List Borrowed Books")
+                # Add your list borrowed books logic here
+                
+            elif select_book_actions == 6:
+                print("List Reserved Books")
+                # Add your list reserved books logic here
+                
+            else:
+                print("Exit")
+                break
         print("Exit")
         break

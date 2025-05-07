@@ -16,7 +16,7 @@ def main_menu():
     print("--------------Main Menu -------------")
     print("| 1. Membership                     |")
     print("| 2. Bookshelf                      |")
-    print("| 3. Books actions                  |")
+    print("| 3. Book Actions                  |")
     print("| 4. Exit                           |")
     print("| --------------------------------- |")
     return int(input(" Chooice a menu: "))
