@@ -5,7 +5,6 @@ def book_actions_menu():
     print("4. Cancel Reservation")
     print("5. List Borrowed Books")
     print("6. List Reserved Books")
-    print("7. Exit")
+    print("7. List All Books")
+    print("8. Exit")
     return int(input("Select an action: "))
-
-

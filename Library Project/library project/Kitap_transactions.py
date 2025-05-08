@@ -18,6 +18,13 @@ def save_books():
     with open(books_file, "w", encoding="utf-8") as f:
         json.dump(books, f, ensure_ascii=False, indent=4)
 
+def book_list():
+    print("List of books")
+    print("Barkod, Dil, Fiyat, Kitap_Adi, Yayinevi, Yazar")
+    for i in books_file:
+        print(books_file)
+        #print(f"Barkod: {i['Barkod']}, Dil: {i['Dil']}, Fiyat: {i['Fiyat']}, Kitap_Adi: {i['Kitap_Adi']}, Yayinevi: {i['Yayinevi']}, Yazar: {i['Yazar']}")
+
 
 def book_add():
     print("Add a new book")
