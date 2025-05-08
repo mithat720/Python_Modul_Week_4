@@ -1,8 +1,23 @@
+import json
+import os
+
+
 from functions import menu_add
 from functions import menu_delete
 from functions import main_menu
 
-books = []
+# Kitapları JSON'dan yükle
+books_file = "books.json"
+if os.path.exists(books_file):
+    with open(books_file, "r", encoding="utf-8") as f:
+        books = json.load(f)
+else:
+    books = []
+
+def save_books():
+    with open(books_file, "w", encoding="utf-8") as f:
+        json.dump(books, f, ensure_ascii=False, indent=4)
+
 
 def book_add():
     print("Add a new book")
@@ -16,6 +31,7 @@ def book_add():
     books.append(book_new)  
     print("------------Book added----------")
     books_print(books)
+    save_books()
 
 def books_print(books):
     print("Books in the library:")
@@ -27,7 +43,7 @@ def book_update():
     print("Update a book")
     book_id = int(input("Book id:   "))
     for i in books:
-        if i["id"] == book_id:
+        if i["Barkod"] == book_id:
             book_barekod = int(input("Book barekod:   "))
             book_language = input("Book language:   ")
             book_price = float(input("Book price:   "))
@@ -42,6 +58,8 @@ def book_update():
             i["Yazar"] = book_author
             print(f"Book with id {book_id} updated.")
         books_print(books)
+        save_books()
+
 
 def book_delete_id():
     print("Delete with barekod")
@@ -50,14 +68,23 @@ def book_delete_id():
         if i["Barkod"] == book_id:
             books.remove(i)
             print(f"Book with barkod {book_id} deleted.")
-        books_print(books)
+            save_books()
+            books_print(books)
+            break
+    else:
+        print(f"No book found with barekod: {book_id}")
 
 def book_delete_name():
     print("Delete with name")
     book_name = input("Book name:   ")
     for i in books:
-        if i["name"] == book_name:
+        if i["Kitap_Adi"] == book_name:  # ✅ Doğru anahtar adı
             books.remove(i)
             print(f"Book with name {book_name} deleted.")
+            save_books()  # ✅ Değişikliği dosyaya kaydet
             books_print(books)
+            break
+    else:
+        print(f"No book found with name: {book_name}")
+
 
