@@ -15,6 +15,7 @@ from Kitap_transactions import book_delete_id
 from Kitap_transactions import book_delete_name
 from book_actions import book_actions_menu
 
+# bu degisikligi simdi yaptim !!!!!!!!!!!!!!!!!!
 
 
 print("---------------------------------------")
