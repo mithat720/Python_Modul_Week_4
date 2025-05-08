@@ -1,4 +1,4 @@
-from functions import main_menu
+from functions import *
 from functions import menu_add
 from functions import menu_update
 from functions import menu_delete
