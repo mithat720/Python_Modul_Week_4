@@ -18,7 +18,7 @@ from Kitap_transactions import book_delete_name
 from book_actions import book_actions_menu
 from Kitap_transactions import book_list
 
-# bu degisikligi simdi yaptim !!!!!!!!!!!!!!!!!!.....
+# bu degisikligi simdi yaptim !!!!!!!!!!!!!!!!!!.....,,,,,
 books_file = "books.json"
 if os.path.exists(books_file):
     with open(books_file, "r", encoding="utf-8") as f:
