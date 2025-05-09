@@ -1,6 +1,4 @@
-import json
-import os
-from functions import *
+from functions import main_menu
 from functions import menu_add
 from functions import menu_update
 from functions import menu_delete
@@ -15,34 +13,11 @@ from Member_Transactions import members_print
 from Kitap_transactions import books_print
 from Kitap_transactions import book_delete_id
 from Kitap_transactions import book_delete_name
-<<<<<<< Updated upstream
 from book_actions import book_actions_menu
-from Kitap_transactions import book_list
-=======
-#from book_actions import book_actions_menu
 from book_actions import (
-    book_actions_menu,
-    borrow_book,
-    return_book,
-    reserve_book,
-    cancel_reservation,
-    list_borrowed_books,
-    list_reserved_books,
-    show_all_books
+    borrow_book, return_book, reserve_book,
+    cancel_reservation, list_borrowed_books, list_reserved_books
 )
->>>>>>> Stashed changes
-
-# bu degisikligi simdi yaptim !!!!!!!!!!!!!!!!!!.....,,,,,
-books_file = "books.json"
-if os.path.exists(books_file):
-    with open(books_file, "r", encoding="utf-8") as f:
-        books = json.load(f)
-else:
-    books = []
-# Kitapları JSON dosyasına kaydetme fonksiyonu
-def save_books():
-    with open(books_file, "w", encoding="utf-8") as f:
-        json.dump(books, f, ensure_ascii=False, indent=4)
 
 
 print("---------------------------------------")
@@ -147,37 +122,19 @@ while True:
 
             if select_book_actions == 1:
                 borrow_book()
-                # Add your borrow book logic here
-                
             elif select_book_actions == 2:
                 return_book()
-
             elif select_book_actions == 3:
                 reserve_book()
-
             elif select_book_actions == 4:
                 cancel_reservation()
-
             elif select_book_actions == 5:
                 list_borrowed_books()
-
             elif select_book_actions == 6:
-<<<<<<< Updated upstream
-                print("List Reserved Books")
-                # Add your list reserved books logic here
-            elif select_book_actions == 7:
-                print(books)
-                #book_list()
-                print("List Reserved Books")
-                # Add your list reserved books logic here
-                
-=======
                 list_reserved_books()
-
-            elif select_book_actions == 7:
-                show_all_books()
-
->>>>>>> Stashed changes
+                
             else:
                 print("Exit")
                 break
+        print("Exit")
+        break
