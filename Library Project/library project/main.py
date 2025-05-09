@@ -16,9 +16,12 @@ from Kitap_transactions import books_print
 from Kitap_transactions import book_delete_id
 from Kitap_transactions import book_delete_name
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from book_actions import book_actions_menu
 from Kitap_transactions import book_list
 =======
+=======
+>>>>>>> Stashed changes
 #from book_actions import book_actions_menu
 from book_actions import (
     book_actions_menu,
@@ -30,6 +33,9 @@ from book_actions import (
     list_reserved_books,
     show_all_books
 )
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 # bu degisikligi simdi yaptim !!!!!!!!!!!!!!!!!!.....,,,,,
@@ -163,6 +169,7 @@ while True:
 
             elif select_book_actions == 6:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 print("List Reserved Books")
                 # Add your list reserved books logic here
             elif select_book_actions == 7:
@@ -172,11 +179,16 @@ while True:
                 # Add your list reserved books logic here
                 
 =======
+=======
+>>>>>>> Stashed changes
                 list_reserved_books()
 
             elif select_book_actions == 7:
                 show_all_books()
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             else:
                 print("Exit")
