@@ -126,23 +126,16 @@ def book_actions_menu():
     print("4. Cancel Reservation")
     print("5. List Borrowed Books")
     print("6. List Reserved Books")
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     print("7. List All Books")
     print("8. Exit")
     return int(input("Select an action: "))
-=======
-=======
->>>>>>> Stashed changes
+
     print("7. Show All Book Records")
     print("0. Exit")
     try:
         return int(input("Choose an option: "))
     except:
         print("Invalid input.")
-<<<<<<< Updated upstream
+
         return 0
->>>>>>> Stashed changes
-=======
-        return 0
->>>>>>> Stashed changes
+
