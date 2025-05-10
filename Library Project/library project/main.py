@@ -51,10 +51,11 @@ print_librarytech_logo()
 print("=======================================")
 print("---------------------------------------")
 print("--------Welkom to Library--------------")
-select = main_menu()
 print("-------------Main Menu----------------")
 
 while True:
+    select = main_menu()
+
     if select ==1:
         
         print("-----------Membership Menu----------")
@@ -113,9 +114,11 @@ while True:
             
     elif select ==2:
         print("--------------Bookshelf menu-------")
-        select_book = menu("Book")
+        #select_book = menu("Book")
        
         while True:
+            select_book = menu("Book")
+
             if select_book ==1:
                 book_add()
                 print("------------Book added----------")
@@ -142,9 +145,9 @@ while True:
             else:
                 print("Exit") 
                 #books_print(books)
-                main_menu()
-                #break
-            break
+                #main_menu()
+                break
+            #break
 
 
     elif select ==3:
