@@ -20,6 +20,7 @@ from book_actions import book_actions_menu
 from Kitap_transactions import book_list
 from functions import web_ablications
 from functions import kioks
+from functions import print_librarytech_logo
 
 #from book_actions import book_actions_menu
 from book_actions import (
@@ -46,6 +47,8 @@ def save_books():
         json.dump(books, f, ensure_ascii=False, indent=4)
 
 
+print_librarytech_logo()
+print("=======================================")
 print("---------------------------------------")
 print("--------Welkom to Library--------------")
 select = main_menu()
@@ -185,7 +188,6 @@ while True:
     elif select ==4:
         print("Web applications")
         web_ablications()
-
         break
     elif select ==5:
         print("Kiosk")
