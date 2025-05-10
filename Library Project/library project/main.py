@@ -139,11 +139,12 @@ while True:
                 books_print(books)
                 break
                 
-            elif select_book == 5:
+            else:
                 print("Exit") 
-                books_print(books)
+                #books_print(books)
                 main_menu()
-                break
+                #break
+            break
 
 
     elif select ==3:
@@ -167,7 +168,6 @@ while True:
                 list_borrowed_books()
 
             elif select_book_actions == 6:
-
                 print("List Reserved Books")
                 # Add your list reserved books logic here
             elif select_book_actions == 7:
@@ -184,7 +184,8 @@ while True:
             else:
                 print("Exit")
                 main_menu()
-                break
+                
+            break
     elif select ==4:
         print("Web applications")
         web_ablications()
