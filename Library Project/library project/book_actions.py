@@ -63,7 +63,7 @@ def reserve_book():
 
     for book in books:
         if str(book["Barkod"]) == barcode:
-            if book.get("status") == "available":
+            if book.get("status") == "available" or book.get("status") ==None:
                 book["status"] = "reserved"
                 book["reserved_by"] = member_name
                 print(f"Book '{book['Kitap_Adi']}' reserved by {member_name}.")
@@ -128,14 +128,10 @@ def book_actions_menu():
     print("6. List Reserved Books")
     print("7. List All Books")
     print("8. Exit")
-    return int(input("Select an action: "))
-
-    print("7. Show All Book Records")
-    print("0. Exit")
+    
     try:
-        return int(input("Choose an option: "))
-    except:
-        print("Invalid input.")
-
-        return 0
+        return int(input("Select an action: "))
+    except ValueError:
+        print("Invalid input, please enter a number.")
+        return 0  # 0 döndürülürse, bir hata yapıldığında tekrar menüye dönülür.
 
