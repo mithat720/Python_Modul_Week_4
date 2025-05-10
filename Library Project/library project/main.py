@@ -32,7 +32,6 @@ from book_actions import (
 )
 
 
-# bu degisikligi simdi yaptim !!!!!!!!!!!!!!!!!!.....,,,,,
 books_file = "books.json"
 if os.path.exists(books_file):
     with open(books_file, "r", encoding="utf-8") as f:
@@ -104,6 +103,7 @@ while True:
                 
             else:
                 print("Exit")
+                main_menu()
                 break
             
     elif select ==2:
@@ -137,6 +137,7 @@ while True:
             elif select_book == 5:
                 print("Exit") 
                 books_print(books)
+                main_menu()
                 break
 
 
@@ -147,7 +148,6 @@ while True:
 
             if select_book_actions == 1:
                 borrow_book()
-                # Add your borrow book logic here
                 
             elif select_book_actions == 2:
                 return_book()
@@ -178,4 +178,5 @@ while True:
             
             else:
                 print("Exit")
+                main_menu()
                 break
