@@ -66,6 +66,7 @@ while True:
             if select_member ==1:
                 member_add("Member")
                 print("------------Member added----------")
+                #menu_list("Member")
                 
             elif select_member ==2:
 
