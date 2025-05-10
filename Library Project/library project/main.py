@@ -18,6 +18,8 @@ from Kitap_transactions import book_delete_name
 
 from book_actions import book_actions_menu
 from Kitap_transactions import book_list
+from functions import web_ablications
+from functions import kioks
 
 #from book_actions import book_actions_menu
 from book_actions import (
@@ -180,3 +182,17 @@ while True:
                 print("Exit")
                 main_menu()
                 break
+    elif select ==4:
+        print("Web applications")
+        web_ablications()
+
+        break
+    elif select ==5:
+        print("Kiosk")
+        kioks()
+        break   
+    elif select ==6:
+        print("Exit")
+        break
+
+

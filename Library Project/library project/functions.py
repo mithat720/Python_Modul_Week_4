@@ -16,8 +16,32 @@ def main_menu():
     print("--------------Main Menu -------------")
     print("| 1. Membership                     |")
     print("| 2. Bookshelf                      |")
-    print("| 3. Book Actions                  |")
-    print("| 4. Exit                           |")
+    print("| 3. Book Actions                   |")
+    print("| 4. Web application                |")
+    print("| 5. Kioks                          |")
+    print("| 6. Exit                           |")
+    print("| --------------------------------- |")
+    return int(input(" Chooice a menu: "))
+
+def web_ablications():
+    print("--------------Web Application Menu -------------")
+    print("| 1. Web application                 |")
+    print("| 2. Web application                 |")
+    print("| 3. Web application                 |")
+    print("| 4. Web application                 |")
+    print("| 5. Web application                 |")
+    print("| 6. Exit                            |")
+    print("| --------------------------------- |")
+    return int(input(" Chooice a menu: "))
+
+def kioks():
+    print("--------------Kioks Menu -------------")
+    print("| 1. Kioks                           |")
+    print("| 2. Kioks                           |")
+    print("| 3. Kioks                           |")
+    print("| 4. Kioks                           |")
+    print("| 5. Kioks                           |")
+    print("| 6. Exit                            |")
     print("| --------------------------------- |")
     return int(input(" Chooice a menu: "))
     
@@ -70,6 +94,8 @@ def menu_update(x):
     print(f"| 4. Exit:                           |")
     print("---------------------------------------")
     return int(input("| Choise:             --"))
+
+
 
 def menu_list(x):
     print(f"{x} list menu")
